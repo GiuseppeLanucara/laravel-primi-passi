@@ -76,7 +76,7 @@
         <input type="text" name="know" placeholder="write the correct album">
         <button>Press!</button>
         <h1></h1>
-        <a href="/">press</a>
+        <a href="/">Go back to Home Page</a>
     </div>
 
 
