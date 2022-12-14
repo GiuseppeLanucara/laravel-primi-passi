@@ -52,6 +52,12 @@
             margin-bottom: 15px;
             color: white;
         }
+
+        a {
+            color: antiquewhite;
+            text-decoration: none;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -70,9 +76,10 @@
         <input type="text" name="know" placeholder="write the correct album">
         <button>Press!</button>
         <h1></h1>
+        <a href="/">press</a>
     </div>
 
-    <a href="/">press</a>
+
 
     <script>
         let button = document.querySelector('button');
