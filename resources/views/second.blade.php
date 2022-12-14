@@ -31,6 +31,10 @@
             font-style: oblique;
         }
 
+        h2 {
+            color: blueviolet;
+        }
+
         p {
             font-size: 30px;
             color: rgb(175, 174, 174);
@@ -75,7 +79,7 @@
         <p>Type the most selling and famous album of Dj Shadow</p>
         <input type="text" name="know" placeholder="write the correct album">
         <button>Press!</button>
-        <h1></h1>
+        <h2></h2>
         <a href="/">Go back to Home Page</a>
     </div>
 
@@ -83,21 +87,23 @@
 
     <script>
         let button = document.querySelector('button');
-        let title = document.querySelector('h1');
+        let title = document.querySelector('h2');
         let numero = document.querySelector('input');
 
         function indovina(know = "Non hai inserito alcun Album") {
-            if (know.value == 'Endtroducing') {
+            if (know == 'Endtroducing') {
                 title.innerHTML = "Corretto";
             } else {
                 title.innerHTML = "Non sei un grande fan";
             }
 
-            button.addEventListener('click', () => {
-                indovina(know.value);
 
-            })
         }
+
+        button.addEventListener('click', () => {
+            indovina(numero.value);
+
+        })
     </script>
 </body>
 
